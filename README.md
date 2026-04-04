@@ -281,4 +281,4 @@ http://localhost:8080
 
 **Nasalifya Simbeye** · ZCAS University · Lusaka, Zambia
 
-nasalifya@outlook.com · [LinkedIn](https://linkedin.com/in/nasalifya-simbeye) · [SOC Home Lab](https://github.com/nasalifya/soc-home-lab)
+nasalifya@outlook.com · [LinkedIn](https://linkedin.com/in/nasalifyasimbeye) · [SOC Home Lab](https://github.com/nasalifya/soc-home-lab)
