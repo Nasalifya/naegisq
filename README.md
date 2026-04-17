@@ -1,4 +1,4 @@
-# 🔐 NAegisQ — Quantum-Resistant Banking Security Framework
+# 🔐 NAegisQ — Quantum-Resistant Banking Security Infrastructure
 
 > **Final Year Project — ZCAS University, Bachelor of Science in Computer Science, 2025**
 >
