@@ -10,7 +10,7 @@
 ![Kyber](https://img.shields.io/badge/ML--KEM--768-Kyber-black?style=flat)
 ![Dilithium](https://img.shields.io/badge/ML--DSA--65-Dilithium-black?style=flat)
 ![NIST](https://img.shields.io/badge/NIST-PQC_Compliant-black?style=flat)
-![License](https://img.shields.io/badge/License-MIT-black?style=flat)
+![License](https://img.shields.io/badge/License-MIT-black?style=flat)h
 
 ---
 
@@ -216,7 +216,7 @@ cd anchor-chain && truffle migrate
 
 ### 2. Setup Database
 ```bash
-sudo -u postgres psql -c "CREATE ROLE nasa WITH LOGIN PASSWORD 'crypto';"
+sudo -u postgres psql -c "CREATE ROLE nasa WITH LOGIN PASSWORD '<your-strong-password>';"
 sudo -u postgres psql -c "CREATE DATABASE aegisq OWNER nasa;"
 ```
 
@@ -239,7 +239,7 @@ http://localhost:8080
 |-------|-------|--------|
 | **Unit Testing** | Key generation, signing, API handlers, DB operations | ✅ Passed |
 | **System Testing** | End-to-end workflow, blockchain anchoring, concurrency | ✅ Passed |
-| **User Acceptance Testing** | Full workflow with representative users | ✅ Passed |
+| **User Acceptance Testing** | Full workflow with representative users | Planned |
 
 ---
 
