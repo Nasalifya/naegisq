@@ -63,14 +63,14 @@ flowchart TD
 | **ML-KEM-768 (Kyber-768)** | FIPS 203 | Key encapsulation — quantum-resistant key exchange |
 | **ML-DSA-65 (Dilithium)** | FIPS 204 | Digital signatures — transaction signing and identity |
 
-Both algorithms are implemented via the **Open Quantum Safe (OQS) liboqs** library and remain secure against Shor's algorithm — the quantum attack that breaks RSA and ECC.
+Both algorithms are implemented via the **Open Quantum Safe (OQS) liboqs** library and are NIST-standardised post-quantum algorithms designed to resist Shor's algorithm, the quantum attack that breaks RSA and ECC. This project has not had an independent security audit.
 
 ### Why This Matters
 
 ```mermaid
 flowchart LR
     A["🔓 Classical RSA/ECC\nused by banks today"] -->|Quantum computer| B["❌ Broken\nHarvest now\ndecrypt later"]
-    C["🔐 NAegisQ\nKyber + Dilithium"] -->|Quantum computer| D["✅ Still secure\nQuantum-resistant\npermanently"]
+    C["🔐 NAegisQ\nKyber + Dilithium"] -->|Quantum computer| D["✅ Still secure\nQuantum-resistant\nby design"]
 
     style A fill:#3d0000,color:#fff,stroke:#555
     style B fill:#5c0000,color:#fff,stroke:#555
@@ -237,8 +237,8 @@ http://localhost:8080
 
 | Phase | Scope | Result |
 |-------|-------|--------|
-| **Unit Testing** | Key generation, signing, API handlers, DB operations | ✅ Passed |
-| **System Testing** | End-to-end workflow, blockchain anchoring, concurrency | ✅ Passed |
+| **Unit Testing** | Key generation, signing, API handlers, DB operations | Run by author; results not published |
+| **System Testing** | End-to-end workflow, blockchain anchoring, concurrency | Run by author; results not published |
 | **User Acceptance Testing** | Full workflow with representative users | Planned |
 
 ---
@@ -265,7 +265,6 @@ http://localhost:8080
 | Blockchain | Ganache CLI — Ethereum testnet |
 | Smart Contract | Solidity 0.8.0 via Truffle |
 | Frontend | HTML + Vanilla JavaScript |
-| Hardware | Dell R720 (112GB RAM) · MikroTik RB2011 · RTX 3080 |
 
 ---
 
